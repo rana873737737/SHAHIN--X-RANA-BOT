@@ -102,7 +102,7 @@ module.exports = {
     });
 
     const selectedLink = `https://www.youtube.com/watch?v=${links[selectedIndex]}`;
-    const loadingMsg = await api.sendMessage(threadId, { text: "🎧 Downloading & converting to MP3..." });
+    const loadingMsg = await api.sendMessage(threadId, { text: "🎧 *𝐒ʜᴀʜɪɴ 𝐑ᴀɴᴀ মামা গানের পিছনে দৌড়াইতেছে... ধরা পড়লেই আপনাদের হাতে তুলে দেওয়া হবে!* 🏃‍♂️💨😂..." });
 
     try {
       const data = await nayan.ytdown(selectedLink);
@@ -121,7 +121,7 @@ module.exports = {
 
 
       await api.sendMessage(threadId, {
-        text: `🎵 Title: ${title}\n✅ Converted to MP3 format.`,
+        text: `🎵 Title: ${title}\n✅ *𝐒ʜᴀʜɪɴ 𝐑ᴀɴᴀ সফলভাবে গানটাকে MP3 বানিয়ে ফেলছে! এখন উপভোগ করুন!* 🎧🎶😎.`,
       }, { quoted: message });
 
 
